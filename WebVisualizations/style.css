@@ -1,0 +1,95 @@
+
+
+body {
+  background: lightgray;
+}
+
+.navbar {
+  background: white;
+}
+
+.navbar-brand {
+  font-size: x-large;
+  cursor: pointer;
+  background: teal;
+  color: #ffffff;
+  text-align: center;
+  height: 100%;
+}
+
+.col-med-8 {
+  display: inline-block;
+  background-color: white;
+  height: 600px;
+  padding: 20px;
+}
+
+.col-med-4 {
+  display: inline-block;
+  background-color: white;
+  height: 600px;
+  padding: 20px;
+}
+
+.parent-container d-flex {
+  border: lightgray;
+}
+
+.container {
+  margin-top: 80px;
+  margin-bottom: 70px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
+}
+
+article {
+  padding: 10px;
+}
+
+h3 {
+  text-align: center;
+  color: teal;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+  color: teal;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+  background-color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+thead {
+  flex: 0 0 auto;
+}
+
+tbody {
+  flex: 1 1 auto;
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+tr {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+p {
+  font-size: x-large;
+}
+
+

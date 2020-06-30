@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Visualization Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <style>img {
+    float: left;
+    } 
+  </style>
+</head>
+
+<body>
+
+    <!-- navbar: must contain the following: --> 
+  <nav class="navbar navbar-expand-sm bg-color">
+    <div class="container-fluid">
+      <div class="navbar-header">
+
+         <!-- the name of the site on the left of the nav which allows users to return to the landing page from any page -->
+        <a class="navbar-brand" href="index.html">Latitude</a>
+
+        <!-- Is responsive (using media queries). The nav must have similar behavior as the screenshots "Navigation Menu" section (notice the background color change) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+
+        <!-- a dropdown to the right of the navbar named "Plots" which provides links to each individual visualization page. -->
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html" id="navbardrop" data-toggle="dropdown">Plots</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="maxtemp.html">MaxTemperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+          </div>
+        </li>
+
+        <!-- two more links to the right: "Comparisons"(which links to the comparisons page), and "Data" (which links to the data page). -->
+        
+        <li class="nav-item">
+          <a class="nav-link" href="comparison.html" target="_blank">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Data.html" target="_blank">Data</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+    <!-- explanation of the project -->
+    <!-- need grid with two rows (header and content) and two columns-->
+
+  <div class="parent-container d-flex">
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 class="display-4">Summary: Latitude vs. X</h1>
+          <hr>
+          <p><a target="_blank" href="Resources/assets/images/Fig1.png">
+            <img src="Resources/assets/images/Fig1.png" height="600" width="1000" alt="Temperature Map"></a><p>The purpose of this project was to analyze how proximity to the 
+              equator affects weather. To do this, we pulled data from the OpenWeatherMap API. We assembled a dataset containing weather information for over 500 cities around 
+              the globe.</p>
+          <p>After compiling our dataset, we used Matplotlib to plot latitude against different weather characteristics. In perticular, we analyzed how latitude impacts the maximum 
+          temperature, humidity, cloudiness, and wind speed of the cities in our dataset. This site provides the source data used and visualizations created, as well as explanations and descriptions of trends 
+          and correlations observed.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1>Visualizations</h1>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-6">
+          <article>
+            <h3>vs. Max Temperature</h3>
+            <a target="_blank" href="Resources/assets/images/Fig1.png">
+              <img src="Resources/assets/images/Fig1.png" height="200" width="300" alt="Temperature Map">
+            </a>
+          </article>
+        </div>
+      </br>
+        <div class="col-sm-6">
+          <article>
+            <h3>vs. Humidity</h3>
+            <a target="_blank" href="Resources/assets/images/Fig2.png">
+              <img src="Resources/assets/images/Fig2.png" height="200" width="300" alt="Humidity Map">
+            </a>
+          </article>
+        </div>
+      </div>
+    </br>
+      <div class="row">
+        <div class="col-sm-6">
+          <article>
+            <h3>vs. Cloudiness</h3>
+            <a target="_blank" href="Resources/assets/images/Fig3.png">
+              <img src="Resources/assets/images/Fig3.png" height="200" width="300" alt="Cloudy Map">
+            </a>
+          </article>
+        </div>
+      </br>
+        <div class="col-sm-6">
+          <article>
+            <h3>vs. Wind Speed</h3>
+            <a target="_blank" href="Resources/assets/images/Fig4.png">
+              <img src="Resources/assets/images/Fig4.png" height="200" width="300" alt=" Map">
+            </a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+</body>
+
+</html>
